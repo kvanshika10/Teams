@@ -20,24 +20,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link  href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
     <title>Join Meeting</title>
   <body class="text-center">
-    <p>
-      hello
 
-      </p>
-    <form class="form-signin">
+    <form class="form-signin" action="/" method="post">
       <img class="mb-4" src="images/teamslogo.png" alt="hi" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal"> Join or Create a Meet</h1>
 
-      <input type="text"  class="form-control" placeholder="Enter the meeting id" required autofocus>
+      <input type="text"  class="form-control" name="id" placeholder="Enter the meeting id" required autofocus>
       <div class="row">
 
 
       <button  class="btn btn-primary" type="submit">Join the Meeting</button>
-      <button  class="btn btn-primary" type="submit">Create the Meeting</button>
+
        </div>
     </form>
   </body>
