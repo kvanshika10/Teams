@@ -13,7 +13,7 @@ app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.json());
-server.listen(3000,()=>{
+server.listen(process.env.PORT||3000,()=>{
   console.log("Server started");
 
 });
