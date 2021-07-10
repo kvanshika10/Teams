@@ -6,37 +6,65 @@
         <meta name="description" content="">
         <meta name="author" content="">
     <title>Document</title>
-
+<link rel="stylesheet" href="room.css" >
     <script>
       const Room_ID="<%=room_Id%>"
     </script>
  <script  defer src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+     <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
     <script src="/socket.io/socket.io.js" defer></script>
 
 
     <script src="script.js" defer></script>
 
-    <style>
-      #video-grid{
-        display:grid;
-        grid-template-columns:repeat(auto-fill,300px);
-        grid-auto-rows:300px;
 
-      }
-      video{
-        height:100%;
-        width:100%;
-        object-fit:cover;
-      }
-    </style>
   </head>
 
   <body>
-    <p>
-      hello
-    </p>
-    <div id="video-grid">
+
+    <div class="screen">
+
+    <div class="screen__left">
+      <div class="videos__group">
+        <div id="video-grid">
+
+        </div>
+      </div>
+      <div class="options">
+
+
+          <div id="muteButton" class="options__button">
+            <i class="fas fa-microphone"></i>
+          </div>
+          <div id="videoButton" class="options__button">
+          <i class="fa fa-video-camera"></i>
+          </div>
+          <div id="leavebtn" class="options__button">
+         <i class="fas fa-phone" style="transform:rotate(224deg)"></i>
+          </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="screen__right">
+      <div class="chat_box">
+          <div class="messages">
+
+          </div>
+      </div>
+      <div class="message_container">
+        <input id="chat_message" type="text" autocomplete="off" placeholder="Type message here...">
+        <div id="send" class="options__button">
+          <i class="fa fa-paper-plane "></i>
+        </div>
 
       </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </body>
 </html>
