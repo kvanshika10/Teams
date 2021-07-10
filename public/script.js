@@ -1,6 +1,9 @@
 //jshint esversion:6
 const socket = io("/");
-const myPeer= new Peer();
+const myPeer= new  Peer(undefined, {
+  host: '/',
+  port: '3001'
+});
 // remember to change interval
 const vGrid=document.getElementById("video-grid");
 const user=prompt("Enter your name");
