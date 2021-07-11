@@ -84,6 +84,10 @@ function addVideoStream(video,stream){
 // for the functioning of mute button
 $("#muteButton").on("click",function(){
   const activated = myStream.getAudioTracks()[0].enabled;
+  $("#muteButton").addClass("pressed");
+setTimeout(()=>{
+  $("#muteButton").removeClass("pressed");
+},100 );
      if (activated==true) {
  myStream.getAudioTracks()[0].enabled = false;
 // mute_btn.classList.toggle("background__red");
@@ -97,6 +101,10 @@ $("#muteButton").html('<i class="fas fa-microphone-slash"></i>');
 // For the functioning of video button
 $("#videoButton").on("click",function(){
   const activated = myStream.getVideoTracks()[0].enabled;
+  $("#videoButton").addClass("pressed");
+setTimeout(()=>{
+  $("#videoButton").removeClass("pressed");
+},100 );
      if (activated==true) {
  myStream.getVideoTracks()[0].enabled = false;
 // mute_btn.classList.toggle("background__red");
@@ -110,14 +118,25 @@ $("#videoButton").html('<i class="fas fa-video-slash"></i>');
 
 // for leave button
 $("#leavebtn").on("click",function(userId){
-    if (friends[userId]) friends[userId].close();
-    document.querySelector("#leavebtn").classList.toggle("background__red");
+    $('.screen').css("display", "none");
+    $(".videos__group").css("display", "flex");
+    $("#leavebtn").addClass("pressed");
+
+  setTimeout(()=>{
+    $("#leavebtn").removeClass("pressed");
+  },100 );
+  myStream.getAudioTracks()[0].enabled = false;
+  myStream.getVideoTracks()[0].enabled = false;
 });
 
 // for messages
 let input=document.querySelector("#chat_message");
 $("#send").on("click",function(event){
+  $("#send").addClass("pressed");
   socket.emit("message",input.value);
+setTimeout(()=>{
+  $("#send").removeClass("pressed");
+},1000 );
   input.value=" ";
 });
 // if other server receive the messages
@@ -127,7 +146,7 @@ socket.on('send_message', function(message,userName) {
 
   messages.innerHTML =
     messages.innerHTML+ `<div class="message">
-      <b><i class="far fa-user-circle"></i> <span>${
+      <b><i class="fas fa-user-circle"></i> <span>${
     userName
 
       }
@@ -135,4 +154,35 @@ socket.on('send_message', function(message,userName) {
       <span>${message}</span>
       </div>`
 
+});
+// sending msg via Enter
+$("#chat_message").on("keydown",function(event){
+  if(event.key=="Enter"&&input.value.length!=0){
+    socket.emit("message",input.value);
+    input.value="";
+  }
+});
+// Invite other users
+$("#InviteButton").on("click",function(){
+  $("#InviteButton").addClass("pressed");
+setTimeout(()=>{
+  $("#InviteButton").removeClass("pressed");
+},100 );
+  prompt("Invite other people via this link",
+  window.location.href);
+});
+// chat button
+$("#Chatbutton").on("click",function(){
+  $("#Chatbutton").addClass("pressed");
+setTimeout(()=>{
+  $("#Chatbutton").removeClass("pressed");
+},100 );
+if($(".screen__right").css("display")==="none"){
+ $(".screen__right").css("display","flex");
+ $(".screen__right").css("flex-direction","column");
+ $(".screen__right").css("flex","0.1");
+ $(".screen__right").css("background-color","#eeeeee");
+}else{
+  $(".screen__right").css("display","none");
+}
 });

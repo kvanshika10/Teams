@@ -22,20 +22,30 @@
     <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+
+
     <title>Join Meeting</title>
-  <body class="text-center">
+  <body>
+    <div class="container">
 
+
+    <div class="row">
+        <div class="col-md-6 col-xl-6 mt-xl-6">
+  <img src="teams-gif.gif" alt="teams" class="img-fluid" width:60px;>
+  </div>
+  <div class="col-md-6  text-center mt-xl-5 mb-5">
     <form class="form-signin" action="/" method="post">
-      <img class="mb-4" src="images/teamslogo.png" alt="hi" width="72" height="72">
-      <h1 class="h3 mb-3 font-weight-normal"> Join or Create a Meet</h1>
+      <img class="mb-4" src="images/teamslogo.png" alt="hi" width="43" height="43">
+      <h3 class="h3 mb-3 font-weight-bold"> Join or Create a Meet</h3>
+    <input type="text"  class="form-control" name="id" placeholder="Enter the meeting id" required autofocus>
+      <div class="row1">
+   <button  class="btn btn-primary" type="submit">Join the Meeting</button>
+      </div>
+      </form>
+    </div>
 
-      <input type="text"  class="form-control" name="id" placeholder="Enter the meeting id" required autofocus>
-      <div class="row">
 
-
-      <button  class="btn btn-primary" type="submit">Join the Meeting</button>
-
-       </div>
-    </form>
+    </div>
+    </div>
   </body>
 </html>
