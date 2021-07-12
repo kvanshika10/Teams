@@ -54,8 +54,6 @@ io.on("connection", socket => {
       //console.log(message);
       //send messages to whole room
       io.emit("send_message", message, userName);
-
-
-    });
+     s});
   });
 });

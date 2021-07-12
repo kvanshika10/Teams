@@ -15,43 +15,43 @@ body {
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #f5bdb3;
+  background-color: #BEAEE2;
 }
 
 .form-signin {
-
-  /*max-width: 450px*/;
+  /*max-width: 450px*/
+  ;
   padding: 10px;
+  padding-top: 130px;
   margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-
 
 }
 
 .form-signin .form-control {
   position: relative;
-    left:125px;
-    width: 50%;
-   align:center;
+  left: 125px;
+  width: 50%;
+  align: center;
   box-sizing: border-box;
   height: auto;
   padding: 10px;
   font-size: 16px;
-
 }
 
 .form-signin .form-control:focus {
   z-index: 1;
 }
-.row1{
-  display:inline-block;
 
+.row1 {
+  display: inline-block;
 }
-.btn{
-margin:20px 20px;
+
+.btn {
+  margin: 20px 20px;
 }
-h3{
+
+h3 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.2rem
+  font-size: 1.2rem;
+  color: #eeeeee;
 }
