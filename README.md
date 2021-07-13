@@ -28,10 +28,10 @@ To build a fully functional prototype with at least one mandatory functionality 
  Make sure you have Node.js installed in your system. If not, download it from [here](https://nodejs.org/en/download/).
 
 1. Clone this repository in your local system.
-2.To install the dependies use command npm i for example -to install socket.io, use npm i socket.io
-2. Open the command prompt from your project directory and run the command npm start.
-3. Go to your browser and type localhost:3000 in the address bar.
-4. Hurray! That's it.
+2.To install the dependies use command npm i for example -to install socket.io, use npm i socket.io.
+3. Open the command prompt from your project directory and run the command npm start.
+4. Go to your browser and type localhost:3000 in the address bar.
+5. Hurray! That's it.
 
 
 ### Libraries and dependencies used
