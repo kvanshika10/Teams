@@ -19,9 +19,9 @@ To build a fully functional prototype with at least one mandatory functionality 
 8. Mirrored video
 
 ### How to establish connection?
-1.When the user opens the app,he wil be redirected to a home page,where he can enter a random room ID and click on the button JOIN THE MEETING.
-2. The user will be redirected to a meeting room.
-3. Now the user can share the meeting link with his friends and enjoy the video call.
+- When the user opens the app,he wil be redirected to a home page,where he can enter a random room ID and click on the button JOIN THE MEETING. 
+- The user will be redirected to a meeting room.
+- Now the user can share the meeting link with his friends and enjoy the video call.
 
 ### How to Open the app?
 
