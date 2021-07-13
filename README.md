@@ -11,7 +11,7 @@ To build a fully functional prototype with at least one mandatory functionality 
 ### Features
 1. Have a video conference with friends over diffrent tabs, browsers, devices and networks.
 2. High quality videos
-3.. Mute audio functionality
+3. Mute audio functionality
 4. Video off functionality
 5. Invite more participants
 6. Leave meeting
