@@ -35,11 +35,11 @@ To build a fully functional prototype with at least one mandatory functionality 
 
 
 ### Libraries and dependencies used
- -HTML
- -Css
- -Javascript
+- HTML
+- CSS
+- Javascript
 - Node.js
-- express
+- Express
 - socket.IO
 - EJS
 - PeerJS (WebRTC)
