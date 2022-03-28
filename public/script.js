@@ -186,3 +186,4 @@ $("#Chatbutton").on("click", function() {
     $(".screen__right").css("display", "none");
   }
 });
+// for screen sharing

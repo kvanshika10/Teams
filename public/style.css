@@ -15,14 +15,34 @@ body {
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #BEAEE2;
+
+   background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.3), rgba(42, 27, 161, 0.7) 100%);
+   background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.3), rgba(42, 27, 161, 0.7) 100%);
+   background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.3)), to rgba(42, 27, 161, 1));
+   background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.3), rgba(42, 27, 161, 0.7)100%);
+   background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.3), rgba(42, 27, 161, 0.7)100%);
+background: border-box;
+
+}
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #010000 !important;
+  }
+}
+.top-nav-collapse {
+  background-color: #010000 !important;
+}
+
+
+.back{
+  background-color:#010000;
 }
 
 .form-signin {
   /*max-width: 450px*/
   ;
   padding: 10px;
-  padding-top: 130px;
+  padding-top: 3rem;
   margin: 0 auto;
 
 }
@@ -54,4 +74,14 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   color: #eeeeee;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-fluid{
+  padding-left: 1rem;
+
 }
